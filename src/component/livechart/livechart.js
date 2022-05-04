@@ -2,22 +2,19 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import mainLogo from '../../assets/main_logo.png'
 
-
 export class LiveChart extends Component {
-
-
     render() {
         const navigationBar = () => {
             return (
                 <div >
-                    <nav class="navbar navbar-expand-lg navbar-expand-sm nav-pad bg_06121e">
-                        <a class="navbar-brand ">
+                    <nav className="navbar navbar-expand-lg navbar-expand-sm nav-pad bg_06121e">
+                        <a className="navbar-brand ">
                             <Link className="nav-ele dis_flex " to="/">
                                 <img src={mainLogo} alt="main Logo" className="lf_logo mr_10"></img>
                             Lufthansa Finance</Link>
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
                     </nav>
                 </div>
@@ -25,7 +22,7 @@ export class LiveChart extends Component {
         }
         return (
             <div className="bg_1c2636">{navigationBar()}
-                <div className="col_white head-why-2 pad_50"> Live Chart</div>
+                <div className="col_white head-why-2 pad_25"> Live Chart</div>
                 <div className=" center_container ">
                     <div className="live-chart-1 ">
                         <div className="live-chart-2 ">
